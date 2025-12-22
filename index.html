@@ -14,7 +14,7 @@
       <nav class="header_menu">
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
-            <a class="header__link_active">главная</a>
+            <a class="header__link_active" href="#0">главная</a>
           </li>
           <li class="header__links-list-item">
             <a class="header__link" href="#0">посмотреть лоты</a>
@@ -41,26 +41,27 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span
-            class="cover__title aligned-text letter-spacing-extended aligned-text_left"
-            >оно</span
+          <!--Для заголовка всего целиком 1. width 100%, цвет шрифта, font-width, font-size, line-height-->
+          <span class="aligned-text letter-spacing-extended aligned-text_left">
+            <!-- aligned-text для перевода всех спанов в блочные элементы: display:block, т.к спаны инлайновые и текст не будет переноситься -->
+            оно</span
           >
-          <span
-            class="cover__title aligned-text letter-spacing-extended aligned-text_center"
+          <span class="aligned-text letter-spacing-extended aligned-text_center"
             >тебе</span
           >
-          <span class="cover__title special-word aligned-text">
+          <span class="aligned-text connected-two-elements">
             <span
-              class="cover__title aligned-text letter-spacing-extended aligned-text_right aligned-letter-O"
+              class="aligned-text letter-spacing-extended aligned-text_right"
               >над</span
             >
             <span
-              class="cover__title aligned-text aligned-text_right no-letter-spacing aligned-letter-O"
+              class="aligned-text aligned-text_right no-letter-spacing aligned-letter-O_right"
               >о</span
             >
           </span>
         </h1>
         <div class="cover__description">
+          <!--Здесь используем display flex и space-between gap-->
           <h3 class="cover__description-text">
             Аукцион вещей, в которые никто не верил
           </h3>

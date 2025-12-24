@@ -1,6 +1,5 @@
 /* место для вашего кода */
 
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -41,9 +40,8 @@
   justify-self: center;
 }
 
-.contacts { 
+.contacts {
   display: flex;
-  display: inline-block;
   flex-direction: column;
   font-style: normal;
   font-size: 18px;
@@ -68,6 +66,7 @@
 }
 
 .contacts .contacts__address {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -123,7 +122,6 @@
   justify-content: end;
   padding-bottom: 119px;
 }
-
 
 .cover__description {
   position: relative;
@@ -311,7 +309,7 @@
 
 .footer__flex {
   display: flex;
-} 
+}
 
 .footer__menu-list {
   display: flex;

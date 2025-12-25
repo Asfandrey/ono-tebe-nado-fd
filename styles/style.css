@@ -15,9 +15,6 @@
   padding-top: 133px;
   padding-bottom: 139px;
 }
-.header__links-list-item_no-bullit {
-  list-style: none;
-}
 
 .header__link {
   display: inline-block;
@@ -33,41 +30,26 @@
   list-style: circle;
 }
 
-.header_logo {
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__logo {
   display: block;
   width: 135px;
   height: 109px;
   justify-self: center;
 }
 
-.contacts {
-  display: flex;
-  flex-direction: column;
-  font-style: normal;
+.address {
+  min-width: 240px;
   font-size: 18px;
-  line-height: 135%;
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  gap: 2px;
+  font-style: normal;
+  line-height: 1.35;
 }
 
-.contacts__right-side {
-  text-align: left;
+.header__address {
   justify-self: end;
-  align-items: flex-start;
-  padding-left: 190px;
-}
-
-.contacts__left-side {
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-left: 50px;
-  padding-right: 100px;
-}
-
-.contacts .contacts__address {
-  display: inline-block;    /* С флексом и блоками пока не все понятно. Нужно разбираться...*/
-  text-decoration: none;
 }
 
 .cover {
@@ -301,6 +283,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr min-content;
   align-items: start;
+}
+
+.footer__address {
+  padding-left: 50px;
 }
 
 .footer__menu {
